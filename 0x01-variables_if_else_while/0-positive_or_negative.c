@@ -25,7 +25,7 @@ else if (n < 0)
 
 else
 {
-prinf("%i is posetive\n", n);
+printf("%i is posetive\n", n);
 }
 
 return (0);
