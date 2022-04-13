@@ -1,5 +1,6 @@
 #include <unistd.h>
-
+int main(void)
+{
 /**
  * _putchar - writes the caracter c to stdout
  * @c: the caracter to print
@@ -8,8 +9,6 @@
  * on error -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
-{
-int main(void);
 
         return (write(1, &c, 1));
 }
