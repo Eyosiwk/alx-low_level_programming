@@ -4,9 +4,9 @@
  * _islower - a function that checks for lowercase character
 
  */
-int _islower(int 1)
+int _islower(int l)
 {
-        if (1 >= 'a' && 1 <= 'z')
+        if (l >= 'a' && l <= 'z')
                 return (1);
         else
                 return (0);
