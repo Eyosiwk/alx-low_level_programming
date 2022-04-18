@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - length of the string
+ * _strlen -length of the string
  *@s: A pointer to an int will be changed/updated
  *
  * Return: void that means our answer is correct
