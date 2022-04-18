@@ -15,7 +15,7 @@ i = 0;
 
 while (scr[i] != '\0')
 {
-dest[i] = src[i];
+dest[i] = scr[i];
 i++;
 }
 dest[i] = '\0';
