@@ -17,7 +17,7 @@ int p;
 
 if (size > 0)
 {
-d = size -1;
+d = size - 1;
 for (i = 0; i < size ; i++)
 {
 for (z = d; z > 0 ; z--)
