@@ -14,7 +14,7 @@ int i;
 
 
 start_c = a;
-end_c =a;
+end_c = a;
 
 
 for (i = 0; i < n - 1; i++)
