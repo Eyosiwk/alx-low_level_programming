@@ -28,7 +28,7 @@ trigger = 0;
 }
 else if (s[x] > 64 && s[x] < 91)
 trigger = 0;
-else if (s[x] >47 && s[x] < 58)
+else if (s[x] > 47 && s[x] < 58)
 trigger = 0;
 }
 }
