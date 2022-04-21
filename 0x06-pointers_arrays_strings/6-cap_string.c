@@ -10,7 +10,7 @@ int x, y;
 int trigger;
 char nots[] = ",;.!?(){}\nt\" ";
 
-for (x = 0, trigger = 0; s[x] != '\0'; x++)
+for (x = 0; trigger = 0; s[x] != '\0'; x++)
 {
 if (s[0] > 96 && s[0] < 123)
 trigger = 1;
@@ -23,7 +23,7 @@ if (trigger)
 {
 if (s[x] > 96 && s[x] < 123)
 {
-s[x] == 32;
+s[x] -= 32;
 trigger = 0;
 }
 else if (s[x] > 64 && s[x] < 91)
