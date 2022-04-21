@@ -11,7 +11,7 @@ int b;
 
 char lower[] = "aeotl";
 char upper[] = "AEOTL";
-char number[] = "43071";
+char numbers[] = "43071";
 
 for (a = 0; string[a] != '\0'; a++)
 {
