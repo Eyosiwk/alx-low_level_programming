@@ -33,7 +33,7 @@ while (*b && *b == *a)
 b++;
 a++;
 }
-if (*b == '0')
+if (*b == '\0')
 return (1);
 else
 return (0);
