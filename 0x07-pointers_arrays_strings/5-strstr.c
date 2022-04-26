@@ -1,5 +1,5 @@
 #include "main.h"
-/
+/**
  * _strstr - prints the consecutive characters of s1 that are in s2
  * @haystack: source string
  * @needle: searching string
