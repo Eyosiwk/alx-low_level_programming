@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+/*
  * _strstr - prints the consecutive characters of s1 that are in s2
  * @haystack: source string
  * @needle: searching string
@@ -20,7 +20,7 @@ haystack++;
 }
 return (0);
 }
-/
+/*
  * coincidence - defines if the string b is inside a
  * @a: source string
  * @b: string to be searched
