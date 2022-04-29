@@ -7,13 +7,15 @@ int main(int argc, char* argv[])
 
   printf("argc = %\n", argc);
   printf("Let's see what is in argv[]\n");
-
-  for(i = 0; i < argc; i++)
+  if(argc > 1)
+  {
+	  for(i = 1; i < argc; i++)
   {
 	  printf("argv[%d] = %s\n", i, argv[i]);
+	  sum += atoi(argv[i]);
   }
- 
+	  printF("Total = %d\n", sum);
+  } 
   return 0;
 }
-
 
