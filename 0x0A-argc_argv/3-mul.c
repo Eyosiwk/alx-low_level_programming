@@ -1,20 +1,23 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - entry point
+ * @argc: number of arguments
+ * @argv: an array consisting arguments
+ *
+ * Return: 0 or 1
+ */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-  int i, sum = 0;
+	int mul;
 
-  printf("argc = %d\n", argc);
-  printf("Let's see what is in argv[]\n");
-  if(argc > 1)
-  {
-          for(i = 1; i < argc; i++)
-  {
-          printf("argv[%d] = %s\n", i, argv[i]);
-          sum += atoi(argv[i]);
-  }
-          printf("Total = %d\n", sum);
-  }
-  return 0;
+	if (argc == 3)
+	{
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
 }
