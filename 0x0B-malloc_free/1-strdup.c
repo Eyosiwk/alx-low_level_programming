@@ -1,15 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
- * _strdup - returns a pointer to a newly allocated space in memory.
- * @str: string.
- *
- * Return: pointer of an array of chars
- */
+* _strdup - A function returns a pointer to a new
+* string which is a duplicate of the string str.
+* @str: The given string parameter
+*
+* Return: A pointer to an array of characters
+*/
+
 char *_strdup(char *str)
 {
-	char *strout;
-	unsigned int i, j;
+	int i, j;
+	char *new;
 
 	if (str == NULL)
 		return (NULL);
@@ -17,13 +21,18 @@ char *_strdup(char *str)
 	for (i = 0; str[i] != '\0'; i++)
 		;
 
-	strout = (char *)malloc(sizeof(char) * (i + 1));
-
-	if (strout == NULL)
+	new = malloc(sizeof(char) * i + 1);
+	if (new == NULL)
+	{
+		printf("Can't allocate bytes after (%d cals)\n", i);
 		return (NULL);
+	}
 
-	for (j = 0; j <= i; j++)
-		strout[j] = str[j];
+	for (j = 0; j < i; j++)
+	{
+		new[j] = str[j];
+	}
 
-	return (strout);
+return (new);
 }
+
